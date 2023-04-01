@@ -16,7 +16,7 @@ import javax.persistence.Table;
  * @author PC
  */
 @Entity
-@Table(name = "articulo")
+@Table(name = "cliente")
 public class Cliente {
 
     @Id
@@ -41,13 +41,6 @@ public class Cliente {
         
     }
  
-    /**
-     * Este constructor se utiliza para crear un objeto "Articulo" con los atributos "nombre", "precio", "clave" y "proveedor" inicializados.
-     * @param nombre el nombre del artículo
-     * @param precio el precio del artículo
-     * @param clave la clave del artículo
-     * @param proveedor el proveedor del artículo
-     */
     public Cliente(String nombre, String direccion, String telefono, String correo) {
         this.nombre = nombre;
         this.direccion = direccion;
